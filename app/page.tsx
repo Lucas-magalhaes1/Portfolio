@@ -33,61 +33,61 @@ const Page = () => {
                 data-aos-delay="1000" 
                 data-aos-duration="1500" 
               >
-                Meu nome é Lucas, sou um desenvolvedor Full-Stack
+                Meu nome é Lucas, sou um desenvolvedor Back-End
               </h2>
             </div>
           </section>
           <section id="about" className="w-full py-12 md:py-24 lg:py-32">
-            <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-              <div data-aos="fade-right" data-aos-duration="1500">
-                <Image
-                  src="/foto.jpeg"
-                  width={500}
-                  height={500}
-                  alt="Profile Photo"
-                  className="rounded-xl"
-                  style={{ aspectRatio: '1 / 1', objectFit: 'cover' }}
-                />
-              </div>
-              <div className="space-y-4" data-aos="fade-left" data-aos-duration="1500">
-                <div>
-                  <h2 className="text-3xl font-bold">Sobre mim</h2>
-                  <p className="text-muted-foreground mt-2">
-                    Ingressei no mundo da programação na faculdade, há mais de 3 anos, quando fui introduzido ao Front-End e outras áreas. Desde então, busco conhecimento e aprendizado para crescer mais a cada dia no desenvolvimento, com foco no Back-End. Ao longo da minha trajetória, desenvolvi aplicações com linguagens como C#, JavaScript e Java.
-                  </p>
-                  <br />
-                  <p>Atualmente cursando Bacharelado em Ciência da Computação, enquanto aprimoro ativamente minha proficiência em C#, com foco na utilização de seus recursos para o desenvolvimento eficiente e escalável de aplicações. Busco aplicar meus conhecimentos, mantendo sempre o foco, qualidade e integridade em meu trabalho.</p>
-                </div>
-                <div>
-                  <a
-                    className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    href="#"
-                    data-aos="zoom-in"
-                    data-aos-delay="500" 
-                    data-aos-duration="1500" 
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="mr-2 h-5 w-5"
-                    >
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                      <polyline points="7 10 12 15 17 10"></polyline>
-                      <line x1="12" x2="12" y1="15" y2="3"></line>
-                    </svg>
-                    Download Currículo
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
+  <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center">
+    <div data-aos="fade-right" data-aos-duration="1500" className="justify-self-end ml-auto">
+      <Image
+        src="/107592724.jfif"
+        width={500}
+        height={500}
+        alt="Profile Photo"
+        className="rounded-xl"
+        style={{ aspectRatio: '1 / 1', objectFit: 'cover' }}
+      />
+    </div>
+    <div className="space-y-4" data-aos="fade-left" data-aos-duration="1500">
+      <div>
+        <h2 className="text-3xl font-bold">Sobre mim</h2>
+        <p className="text-muted-foreground mt-2">
+          Ingressei no mundo da programação na faculdade, há mais de 3 anos, quando fui introduzido ao Front-End e outras áreas. Desde então, busco conhecimento e aprendizado para crescer mais a cada dia no desenvolvimento, com foco no Back-End. Ao longo da minha trajetória, desenvolvi aplicações com linguagens como C#, JavaScript e Java.
+        </p>
+        <br />
+        <p>Atualmente, curso Bacharelado em Ciência da Computação e aprimoro continuamente minha proficiência no ecossistema .NET. Meu foco está no desenvolvimento de aplicações eficientes e escaláveis, utilizando seus recursos de forma estratégica. Busco aplicar meus conhecimentos com dedicação, priorizando qualidade, boas práticas e integridade no trabalho.</p>
+      </div>
+      <div>
+        <a
+          className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-sm transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+          href="#"
+          data-aos="zoom-in"
+          data-aos-delay="500" 
+          data-aos-duration="1500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="mr-2 h-5 w-5"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" x2="12" y1="15" y2="3"></line>
+          </svg>
+          Download Currículo
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
           <section id="technologies" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
             <div className="container max-w-5xl mx-auto px-4 md:px-6 text-center text-muted-foreground">
               <div className="space-y-4 text-center">
@@ -100,7 +100,7 @@ const Page = () => {
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8 mt-8">
                 {[
-                  { icon: <Hash className="w-12 h-12" />, name: 'C#', description: 'Tenho um sólido entendimento da linguagem C# e especialização em aplicações robustas e eficientes. Atualmente, desenvolvo o projeto "DistribuiPlus".' },
+                  { icon: <Hash className="w-12 h-12" />, name: 'C#', description: 'Tenho um sólido domínio da linguagem C#, com especialização no desenvolvimento de aplicações escaláveis e eficientes. Possuo experiência em projetos reais, aplicando SOLID, Clean Code e boas práticas de arquitetura de software, como Domain-Driven Design (DDD) e separação de responsabilidades' },
                   { icon: <Coffee className="w-12 h-12" />, name: 'Java', description: 'Onde aprendi e apliquei os principais conceitos de POO, aprimorando habilidades em design e estrutura de código, incluindo a implementação de uma aplicação para sistemas lineares.' },
                   { icon: <FileCode className="w-12 h-12" />, name: 'C', description: 'Linguagem utilizada em algumas matérias da faculdade, essencialmente para entendimento de conceitos gerais como estruturas de dados e algoritmos, tais como árvores, tabelas hash e grafos.' },
                   { icon: <Code className="w-12 h-12" />, name: 'HTML & CSS', description: 'Onde eu adquiri grande parte do interesse pelo desenvolvimento web. Possuo mais de 3 anos de experiência com ambas, onde eu usei-as para criar trabalhos da faculdade, projetos e aplicações responsivas.' },
@@ -140,7 +140,7 @@ const Page = () => {
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm" data-aos="fade-up" data-aos-duration="2000">
                   <div className="flex flex-col space-y-1.5 p-6">
                     <Image
-                      src="/Captura de tela 2024-08-27 201037.png"
+                      src="/Home.png"
                       width="400"
                       height="225"
                       alt="Project 1"
@@ -149,14 +149,14 @@ const Page = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold">DistribuiPlus</h3>
+                    <h3 className="text-lg font-bold">Big</h3>
                     <br />
-                    <p className="text-muted-foreground">Sistema para gerenciar distribuidoras de alimentos, cobrindo vendas, estoque, emissão de notas fiscais e roteirização de entregas. Desenvolvido com C# e .NET.</p>
+                    <p className="text-muted-foreground">Sistema de gestão de vendas e pedidos, permitindo o controle de clientes, vendedores e produtos, além da geração de relatórios e análise de desempenho. Desenvolvido com C# e .NET.</p>
                   </div>
                   <div className="items-center p-6 flex justify-end">
                     <a
                       className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      href="https://github.com/Lucas-magalhaes1/DistribuiPlus"
+                      href="https://github.com/Lucas-magalhaes1/Big"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -199,7 +199,7 @@ const Page = () => {
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm" data-aos="fade-up" data-aos-duration="2000">
                   <div className="flex flex-col space-y-1.5 p-6">
                     <Image
-                      src="/Captura de tela 2024-08-27 211438.png"
+                      src="/Captura de tela 2025-03-02 120858.png"
                       width="400"
                       height="225"
                       alt="Project 3"
@@ -208,14 +208,14 @@ const Page = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold">API DistribuiPlus </h3>
+                    <h3 className="text-lg font-bold">Money Extensions</h3>
                     <br />
-                    <p className="text-muted-foreground">API da DistribuiPlus para otimização de rotas de entrega, calculando as trajetórias mais eficientes e econômicas para gerenciar a logística e reduzir custos. <br /> (Em desenvolvimento)</p>
+                    <p className="text-muted-foreground">Biblioteca para manipulação avançada de valores monetários em C#, oferecendo formatação, conversão e operações matemáticas simplificadas. Disponível como pacote NuGet, já conta com mais de 300 downloads<br /> (Em desenvolvimento)</p>
                   </div>
                   <div className="items-center p-6 flex justify-end">
                     <a
                       className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      href="#"
+                      href="https://github.com/Lucas-magalhaes1/Money-Extensions"
                     >
                       <GitlabIcon className="mr-2 h-5 w-5" />
                       Ver Projeto
