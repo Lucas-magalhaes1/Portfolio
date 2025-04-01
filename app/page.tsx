@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import './globals.css';
 import { Code, Coffee, Database, Figma, FileCode, FileJson, GitBranch, GitlabIcon, Hash } from 'lucide-react';
+import { SiGo } from 'react-icons/si'; 
 import ScrollToTopButton from '@/components/ui/ScrollToTopButton';
 import MenuToggle from '@/components/ui/MenuToggle';
 import ContactForm from "@/components/ui/ContactForm";
@@ -41,7 +42,7 @@ const Page = () => {
   <div className="container px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 items-center">
     <div data-aos="fade-right" data-aos-duration="1500" className="justify-self-end ml-auto">
       <Image
-        src="/107592724.jfif"
+        src="/Perfil.jpeg"
         width={500}
         height={500}
         alt="Profile Photo"
@@ -53,10 +54,10 @@ const Page = () => {
       <div>
         <h2 className="text-3xl font-bold">Sobre mim</h2>
         <p className="text-muted-foreground mt-2">
-          Ingressei no mundo da programação na faculdade, há mais de 3 anos, quando fui introduzido ao Front-End e outras áreas. Desde então, busco conhecimento e aprendizado para crescer mais a cada dia no desenvolvimento, com foco no Back-End. Ao longo da minha trajetória, desenvolvi aplicações com linguagens como C#, JavaScript e Java.
+          Ingressei no mundo da programação na faculdade, há mais de 3 anos, quando fui introduzido ao Front-End e outras áreas. Desde então, busco conhecimento e aprendizado para crescer mais a cada dia no desenvolvimento, com foco no Back-End. Ao longo da minha trajetória,Trabalhei com linguagens como C#, Go e Typescript.
         </p>
         <br />
-        <p>Atualmente, curso Bacharelado em Ciência da Computação e aprimoro continuamente minha proficiência no ecossistema .NET. Meu foco está no desenvolvimento de aplicações eficientes e escaláveis, utilizando seus recursos de forma estratégica. Busco aplicar meus conhecimentos com dedicação, priorizando qualidade, boas práticas e integridade no trabalho.</p>
+        <p>Atualmente, curso Bacharelado em Ciência da Computação e aprimoro continuamente minha proficiência no ecossistema .NET e no Golang. Meu foco está no desenvolvimento de aplicações eficientes e escaláveis, utilizando seus recursos de forma estratégica. Busco aplicar meus conhecimentos com dedicação, priorizando qualidade, boas práticas e integridade no trabalho.</p>
       </div>
       <div>
         <a
@@ -100,14 +101,14 @@ const Page = () => {
               </div>
               <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-8 mt-8">
                 {[
-                  { icon: <Hash className="w-12 h-12" />, name: 'C#', description: 'Tenho um sólido domínio da linguagem C#, com especialização no desenvolvimento de aplicações escaláveis e eficientes. Possuo experiência em projetos reais, aplicando SOLID, Clean Code e boas práticas de arquitetura de software, como Domain-Driven Design (DDD) e separação de responsabilidades' },
+                  { icon: <Hash className="w-12 h-12" />, name: 'C#', description: 'C# é minha linguagem principal, Possuo experiência em projetos reais, tenho bastante experiência no desenvolvimento de aplicações escaláveis e eficientes. Trabalhando com SOLID, Clean Code e boas práticas de arquitetura de software, como Domain-Driven Design (DDD) e separação de responsabilidades.' },
+                  { icon: <SiGo className="w-12 h-12" />, name: 'Go', description: 'Sólido entendimento da linguagem de programação Go, com especialização no desenvolvimento de aplicações concorrentes e eficientes. Atualmente, tenho um grande projeto chamado FluentFlow em desenvolvimento nesta linguagem.' },
                   { icon: <Coffee className="w-12 h-12" />, name: 'Java', description: 'Onde aprendi e apliquei os principais conceitos de POO, aprimorando habilidades em design e estrutura de código, incluindo a implementação de uma aplicação para sistemas lineares.' },
                   { icon: <FileCode className="w-12 h-12" />, name: 'C', description: 'Linguagem utilizada em algumas matérias da faculdade, essencialmente para entendimento de conceitos gerais como estruturas de dados e algoritmos, tais como árvores, tabelas hash e grafos.' },
                   { icon: <Code className="w-12 h-12" />, name: 'HTML & CSS', description: 'Onde eu adquiri grande parte do interesse pelo desenvolvimento web. Possuo mais de 3 anos de experiência com ambas, onde eu usei-as para criar trabalhos da faculdade, projetos e aplicações responsivas.' },
-                  { icon: <FileJson className="w-12 h-12" />, name: 'JavaScript', description: 'Especialização no desenvolvimento de aplicações web modernas e dinâmicas, e amplamente utilizada na maioria dos meus projetos, juntamente com JQuery.' },
+                  { icon: <FileJson className="w-12 h-12" />, name: 'JavaScript', description: 'JavaScript é essencial nos meus projetos, e utilizo principalmente com TypeScript para trazer mais segurança, tipagem estática e melhor organização no desenvolvimento de aplicações web modernas e dinâmicas.' },
                   { icon: <GitBranch className="w-12 h-12" />, name: 'Git', description: 'Uso Git para controle de versão, facilitando a colaboração e o gerenciamento de código em meus projetos. Tenho experiência em branches, merges e resolução de conflitos.' },
-                  { icon: <Database className="w-12 h-12" />, name: 'SQL', description: 'Banco de dados relacionais que mais utilizo para otimizar consultas, além de estruturar e manipular dados para apoiar o desenvolvimento e a análise dos meus projetos.' },
-                  { icon: <Figma className="w-12 h-12" />, name: 'Figma', description: 'Utilizo o Figma para prototipar projetos, criar interfaces de usuário e desenvolver layouts interativos, tanto colaborando com equipes quanto de forma independente.' },
+                  { icon: <Database className="w-12 h-12" />, name: 'Banco de Dados', description: 'Experiência com bancos de dados relacionais e não relacionais, estruturando e otimizando dados para diferentes aplicações. Trabalho com SQL (PostgreSQL, MySQL) e NoSQL (MongoDB, Firebase), garantindo eficiência e escalabilidade.' }
 
                 ].map((tech, index) => (
                   <div
@@ -151,7 +152,14 @@ const Page = () => {
                   <div className="p-4">
                     <h3 className="text-lg font-bold">Big</h3>
                     <br />
-                    <p className="text-muted-foreground">Sistema de gestão de vendas e pedidos, permitindo o controle de clientes, vendedores e produtos, além da geração de relatórios e análise de desempenho. Desenvolvido com C# e .NET.</p>
+                    <p className="text-muted-foreground">Sistema de gestão de vendas e pedidos, permitindo o controle de clientes, vendedores e produtos, além da geração de relatórios e análise de desempenho. Desenvolvido com C# e .NET.
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                      <br />
+                    </p>
                   </div>
                   <div className="items-center p-6 flex justify-end">
                     <a
@@ -169,7 +177,7 @@ const Page = () => {
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm" data-aos="fade-up" data-aos-duration="2000">
                   <div className="flex flex-col space-y-1.5 p-6">
                     <Image
-                      src="/Screenshot App.png"
+                      src="/DimaApp.png"
                       width="400"
                       height="225"
                       alt="Project 2"
@@ -178,15 +186,16 @@ const Page = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold">BarberShop</h3>
+                    <h3 className="text-lg font-bold">DIMA</h3>
                     <br />
-                    <p className="text-muted-foreground">Plataforma desenvolvida com Node.js e MongoDB para otimizar agendamentos e gerenciamento de serviços em barbearias.</p>
+                    <p className="text-muted-foreground">
+                    Aplicativo de controle financeiro desenvolvido com C# e MudBlazor. Permite gerenciar transações, acompanhar gastos mensais, visualizar gráficos interativos e processar pagamentos via Stripe. Conta com API estruturada em Minimal APIs, autenticação segura com ASP.NET Identity. Suporte a WebHooks, Background Jobs e acesso otimizado via PWA sendo desnvolvidos.</p>
                     <br />
                   </div>
                   <div className="items-center p-6 flex justify-end">
                     <a
                       className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      href="https://github.com/Lucas-magalhaes1/BarberShop"
+                      href="https://github.com/Lucas-magalhaes1/Dima"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -199,7 +208,7 @@ const Page = () => {
                 <div className="rounded-lg border bg-card text-card-foreground shadow-sm" data-aos="fade-up" data-aos-duration="2000">
                   <div className="flex flex-col space-y-1.5 p-6">
                     <Image
-                      src="/Captura de tela 2025-03-02 120858.png"
+                      src="/FluentFlow.png"
                       width="400"
                       height="225"
                       alt="Project 3"
@@ -208,14 +217,14 @@ const Page = () => {
                     />
                   </div>
                   <div className="p-4">
-                    <h3 className="text-lg font-bold">Money Extensions</h3>
+                    <h3 className="text-lg font-bold">FluentFlow</h3>
                     <br />
-                    <p className="text-muted-foreground">Biblioteca para manipulação avançada de valores monetários em C#, oferecendo formatação, conversão e operações matemáticas simplificadas. Disponível como pacote NuGet, já conta com mais de 300 downloads<br /> (Em desenvolvimento)</p>
+                    <p className="text-muted-foreground">FluentFlow é um SaaS de aprendizagem de inglês que usa IA para oferecer respostas dinâmicas e práticas de conversação. Desenvolvido com TypeScript, Go e GraphQL, a plataforma proporciona uma experiência personalizada e adaptativa, diferentes planos, e com recursos como feedback contextual e interações em tempo real.<br /> (Em desenvolvimento) <br /> <br /></p>
                   </div>
                   <div className="items-center p-6 flex justify-end">
                     <a
                       className="inline-flex h-9 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                      href="https://github.com/Lucas-magalhaes1/Money-Extensions"
+                      href="https://github.com/Lucas-magalhaes1/FluentFlow"
                     >
                       <GitlabIcon className="mr-2 h-5 w-5" />
                       Ver Projeto
