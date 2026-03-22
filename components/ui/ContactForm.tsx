@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { Dialog, DialogContent, DialogFooter, DialogClose } from "@/components/ui/alert-dialog";
 import { Button } from "@/components/ui/button";
 import { CircleCheckIcon, Github, Linkedin, Mail, Send } from "lucide-react";
+import { Sora } from 'next/font/google';
+
+const sora = Sora({ subsets: ['latin'], variable: '--font-sora' });
 
 const fieldStyle: React.CSSProperties = {
   backgroundColor: 'transparent',
@@ -55,7 +58,7 @@ const ContactForm: React.FC = () => {
   return (
     <section
       id="contact"
-      className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-[#0a0a0a] via-[#0d1b2a] to-[#0077b6] relative overflow-hidden"
+      className={`${sora.variable} w-full py-12 md:py-24 lg:py-32 bg-gradient-to-br from-[#0a0a0a] via-[#0d1b2a] to-[#0077b6] relative overflow-hidden`}
     >
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent pointer-events-none" />
 
@@ -63,14 +66,11 @@ const ContactForm: React.FC = () => {
 
         {/* Header */}
         <div className="text-center mb-10" data-aos="fade-up">
-          <span className="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white/80 mb-4 backdrop-blur-sm">
+          <h2 className="[font-family:var(--font-sora)] text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
             Contato
-          </span>
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
-            Entre em contato
           </h2>
           <p className="text-white/60 mt-3 max-w-[500px] mx-auto">
-            Fique à vontade para me enviar uma mensagem. Será um prazer respondê-la.
+            Fique à vontade para me enviar uma mensagem. 
           </p>
 
           <div className="flex justify-center gap-4 mt-6">
@@ -82,9 +82,8 @@ const ContactForm: React.FC = () => {
               <Mail className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/lucas-magalhes1"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/lucasmagalhaes11"
+              target="_blank" rel="noopener noreferrer"
               className="p-3 rounded-xl border border-white/20 bg-white/10 text-white/60 hover:text-[#0077b5] hover:bg-white/20 hover:border-[#0077b5]/50 hover:scale-110 transition-all duration-200"
               title="LinkedIn"
             >
@@ -92,8 +91,7 @@ const ContactForm: React.FC = () => {
             </a>
             <a
               href="https://github.com/Lucas-magalhaes1"
-              target="_blank"
-              rel="noopener noreferrer"
+              target="_blank" rel="noopener noreferrer"
               className="p-3 rounded-xl border border-white/20 bg-white/10 text-white/60 hover:text-white hover:bg-white/20 hover:border-white/40 hover:scale-110 transition-all duration-200"
               title="GitHub"
             >
@@ -121,8 +119,7 @@ const ContactForm: React.FC = () => {
                   style={fieldStyle}
                   onFocus={handleFocus}
                   onBlur={handleBlur}
-                  id="name"
-                  name="name"
+                  id="name" name="name"
                   placeholder="Seu nome"
                   required
                 />
@@ -134,8 +131,7 @@ const ContactForm: React.FC = () => {
                   style={fieldStyle}
                   onFocus={handleFocus}
                   onBlur={handleBlur}
-                  id="subject"
-                  name="subject"
+                  id="subject" name="subject"
                   placeholder="Assunto"
                   required
                 />
@@ -149,8 +145,7 @@ const ContactForm: React.FC = () => {
                 style={fieldStyle}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
-                id="email"
-                name="email"
+                id="email" name="email"
                 type="email"
                 placeholder="Seu email"
                 required
@@ -164,8 +159,7 @@ const ContactForm: React.FC = () => {
                 style={fieldStyle}
                 onFocus={handleFocus}
                 onBlur={handleBlur}
-                id="message"
-                name="message"
+                id="message" name="message"
                 placeholder="Sua mensagem"
                 required
               />
@@ -187,7 +181,7 @@ const ContactForm: React.FC = () => {
             <div className="flex flex-col items-center justify-center gap-4 py-8">
               <CircleCheckIcon className="size-12 text-green-500" />
               <div className="space-y-2 text-center">
-                <h3 className="text-lg font-medium">Sucesso!</h3>
+                <h3 className="[font-family:var(--font-sora)] text-lg font-medium">Sucesso!</h3>
                 <p className="text-muted-foreground">
                   Sua mensagem foi enviada com sucesso. Entrarei em contato em breve.
                 </p>
